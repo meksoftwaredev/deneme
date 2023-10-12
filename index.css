@@ -5,8 +5,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.ekran::-webkit-scrollbar {
-    background: transparent;
+body {
+    width: 100%;
+    height: 100%;
+    background-color: wheat;
+}
+
+/* width */
+::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -16,8 +23,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    border: 5px solid gray;
-    border-radius: 5px;
     overflow: auto;
     scroll-snap-type: x mandatory;
     scroll-margin-left: 100%;
@@ -29,6 +34,8 @@
     height: 100%;
     scroll-snap-align: center;
     scroll-snap-stop: none;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .inaktif {
@@ -38,16 +45,18 @@
     height: 100%;
     scroll-snap-align: center;
     scroll-snap-stop: always;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .durumbaslik {
     position: absolute;
-    top: 1%;
+    top: 0%;
     width: 100%;
-    height: 8%;
+    height: 7%;
     text-align: center;
-    font-size: 5vh;
-    line-height: 7.1vh;
+    font-size: 4vh;
+    line-height: 6.3vh;
     border-top: 0.5vh solid gray;
     border-bottom: 0.5vh solid gray;
     font-style: italic;
@@ -56,6 +65,7 @@
     user-select: none;
     overflow-y: auto;
     overflow-x: auto;
+    background-color: lightblue;
 }
 
 .odevblok {
@@ -86,7 +96,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: red;
+    background-color: ;
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
@@ -101,12 +111,12 @@
     font-size: 4vh;
     line-height: 7vh;
     font-style: italic;
-    overflow-x: auto;
-    overflow-y: hidden;
     letter-spacing: 3px;
-    background-color: green;
+    background-color: ;
     border-bottom: 0.2vh solid gray;
     z-index: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .odevresim {
@@ -141,7 +151,7 @@
     top: 100%;
     width: 100%;
     height: 100%;
-    background-color: blue;
+    background-color: ;
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
