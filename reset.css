@@ -1,0 +1,7 @@
+* {
+    appearance: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
